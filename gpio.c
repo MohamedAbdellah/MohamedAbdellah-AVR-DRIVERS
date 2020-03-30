@@ -63,7 +63,6 @@ DIO_errorState_t DIO_enuSetPin(DIO_str_pin_t * pin) {
 		break;
 
 	case OUTPUT:
-		if (pin->val_t == 1)
 			HW_WR_PIN(DIO_PORT + pin->port_t, pin->pin_t, 1);
 		break;
 
